@@ -157,8 +157,8 @@ local function worker(args)
                 mac     = string.match(line, "Connected to ([0-f:]+)") or mac
                 -- SSID: 00018E1145AC
                 essid   = string.match(line, "SSID: (.+)") or essid
-                -- tx bitrate: 36.0 MBit/s
-                bitrate = string.match(line, "tx bitrate: (.+/s)") or bitrate
+                -- rx bitrate: 36.0 MBit/s
+                bitrate = string.match(line, "rx bitrate: (.+/s)") or bitrate
             end
             f:close()
 
